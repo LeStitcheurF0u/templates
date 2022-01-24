@@ -1,0 +1,197 @@
+@import url(reset.css);
+@import url(fonts.css);
+body {
+  background: #fefefe;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.toggle {
+  position: relative;
+  background: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.5s cubic-bezier(0, 0.26, 0.89, 0.65);
+}
+
+.toggle span {
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  background: rgb(0, 0, 0);
+  border-radius: 4px;
+  transition: 0.5s cubic-bezier(0, 0.26, 0.89, 0.65);
+}
+.toggle span:nth-child(1) {
+  transform: translateY(-7px);
+  width: 20px;
+}
+
+.toggle.active span:nth-child(1) {
+  transform: translateY(0) rotate(225deg);
+}
+
+.toggle span:nth-child(2) {
+  transform: translateY(7px);
+  width: 20px;
+}
+
+.toggle.active span:nth-child(2) {
+  transform: translateY(0) rotate(135deg);
+}
+
+.toggle.active span:nth-child(3) {
+  transform: translateX(60px);
+}
+
+header .logo img {
+  width: 200px;
+  height: 50px;
+}
+
+.panier {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto";
+  font-weight: 900;
+}
+
+.panier-img img {
+  width: 25px;
+  height: 25px;
+}
+
+.panier-content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/***********************************/
+/*             Articles            */
+/***********************************/
+
+.items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  margin: 25px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-img img {
+  width: 150px;
+  height: 200px;
+}
+
+.item-desc {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-desc span {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 1.2em;
+  color: #292929;
+}
+
+.item-desc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-desc-link a img {
+  width: 25px;
+  height: 25px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+footer .left {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .left a {
+    color: #292929;
+    font-size: 1.2em;
+    font-family: 'Roboto';
+    font-weight: 200;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer .left a:hover {
+    color: #f66717;
+}
+
+footer .middle span {
+  color: #292929;
+  font-size: 1.2em;
+  font-family: "Roboto";
+}
