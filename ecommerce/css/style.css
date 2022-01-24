@@ -90,13 +90,12 @@ header .logo img {
   height: auto;
 }
 
-.hero .hero-cta {
-  position: absolute;
-  bottom: 20%;
-  left: 20%;
-}
 
 .hero-cta button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   display: flex;
   justify-content: center;
   align-items: center;
