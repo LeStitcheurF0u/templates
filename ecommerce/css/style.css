@@ -2,13 +2,14 @@
 @import url(fonts.css);
 body {
   background: #fefefe;
+  scrollbar-color: #000;
 }
 
 header {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background: rgba(255, 255, 255, 0.4);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -16,72 +17,34 @@ header {
   -webkit-backdrop-filter: blur(10.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  z-index: 2;
+  z-index: 1;
 }
 
-.toggle {
-  position: relative;
-  background: none;
-  width: 50px;
-  height: 50px;
+nav ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  overflow: hidden;
-  transition: 0.5s cubic-bezier(0, 0.26, 0.89, 0.65);
-  z-index: 3;
-}
-
-.toggle span {
-  position: absolute;
-  width: 20px;
-  height: 4px;
-  background: rgb(0, 0, 0);
-  border-radius: 4px;
-  transition: 0.5s cubic-bezier(0, 0.26, 0.89, 0.65);
-}
-.toggle span:nth-child(1) {
-  transform: translateY(-7px);
-  width: 20px;
-}
-
-.toggle.active span:nth-child(1) {
-  transform: translateY(0) rotate(225deg);
-}
-
-.toggle span:nth-child(2) {
-  transform: translateY(7px);
-  width: 20px;
-}
-
-.toggle.active span:nth-child(2) {
-  transform: translateY(0) rotate(135deg);
-}
-
-.toggle.active span:nth-child(3) {
-  transform: translateX(60px);
-}
-
-.menu .contenu-menu {
-  position: absolute;
-  top: -2000px;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: #999999;
-  display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  transition: .7s cubic-bezier(.57,0,.37,.99);
-  z-index: 2;
+}
+nav ul li {
+  height: 100%;
+  list-style: none;
+  margin: 10px;
 }
 
-.menu.open .contenu-menu {
-  top: 0;
+nav ul li a {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto';
+  font-size: 1.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color:chocolate;
 }
 
+nav ul li.active a {
+  color: aqua;
+}
 
 header .logo img {
   width: 200px;
@@ -97,6 +60,7 @@ header .logo img {
   color: black;
   font-family: "Roboto";
   font-weight: 900;
+  margin: 10px;
 }
 
 .panier-img img {
@@ -113,6 +77,52 @@ header .logo img {
 }
 
 /***********************************/
+/*              HERO               */
+/***********************************/
+
+.hero {
+  width: 100%;
+  height: auto;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero .hero-cta {
+  position: absolute;
+  bottom: 20%;
+  left: 20%;
+}
+
+.hero-cta button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+  background: rgba(22, 245, 244, .7);
+  border: 3px solid rgb(17, 146, 146);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.hero-cta button:hover {
+  background: rgb(17, 146, 146);
+  border: 3px solid rgba(22, 245, 244, .7);
+}
+
+.hero-cta button span {
+  font-family: 'Roboto';
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #fefefe;
+}
+
+
+/***********************************/
 /*             Articles            */
 /***********************************/
 
@@ -121,6 +131,7 @@ header .logo img {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+  z-index: 1;
 }
 
 .item {
@@ -136,12 +147,14 @@ header .logo img {
   -webkit-backdrop-filter: blur(10.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 1;
 }
 
 .item-img {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .item-img img {
@@ -182,8 +195,6 @@ header .logo img {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   display: flex;
   flex-flow: row wrap;

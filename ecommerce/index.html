@@ -10,38 +10,18 @@
 </head>
 <body>
     <header>
-        <div class="menu">
-            <div class="toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <script>
-                let menutoggle = document.querySelector('.toggle');
-                let menu = document.querySelector('.menu');
-                menutoggle.onclick = function() {
-                    menu.classList.toggle('open');
-                    menutoggle.classList.toggle('active');
-                };
-            </script>
-            <div class="contenu-menu">
-                <div class="menu-title">
-                  <h1>La Capsule - Blog</h1>
-                </div>
-                <div class="lien">
-                  <a href="index.php">Accueil</a>
-                </div>
-                <div class="lien">
-                  <a href="articles.php">Articles</a>
-                </div>
-                <div class="lien">
-                  <a href="https://www.lacapsule.bzh">Site de La Capsule</a>
-                </div>
-              </div>
-        </div>
         <div class="logo">
-            <a href=""><img src="media/img/Logo.png" alt="Logo ABSUMM"></a>
+            <a href=""><img src="media/img/logo.png" alt="Logo ABSUMM"></a>
         </div>
+        <nav>
+            <ul>
+                <li class="active"><a href="">Accueil</a></li>
+                <li><a href="">A propos</a></li>
+                <li><a href="">Articles</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+
         <div class="panier">
             <div class="panier-img">
             <a href=""><img src="media/img/cart.png" alt="Panier"></a>
@@ -53,6 +33,15 @@
         </div>
     </header>
 
+
+    <div class="hero">
+        <div class="hero-img">
+            <img src="media/img/hero2.jpg" alt="">
+        </div>
+        <div class="hero-cta">
+            <button><span>Commander dès maintenant !</span></button>
+        </div>
+    </div>
 
 
     <main>
