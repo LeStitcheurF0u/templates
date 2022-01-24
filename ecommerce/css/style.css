@@ -1,6 +1,7 @@
 @import url(reset.css);
 @import url(fonts.css);
-body {
+html, body {
+  width: 100%;
   background: #fefefe;
   scrollbar-color: #000;
 }
@@ -126,6 +127,7 @@ header .logo img {
 /***********************************/
 
 .items {
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
