@@ -21,6 +21,11 @@ header {
   z-index: 1;
 }
 
+header .logo img {
+  width: 100px;
+  height: 50px;
+}
+
 nav ul {
   display: flex;
   flex-flow: row wrap;
@@ -47,10 +52,7 @@ nav ul li.active a {
   color: aqua;
 }
 
-header .logo img {
-  width: 200px;
-  height: 50px;
-}
+
 
 .panier {
   display: flex;
@@ -234,4 +236,16 @@ footer .middle span {
   color: #292929;
   font-size: 1.2em;
   font-family: "Roboto";
+}
+@media screen and (max-width: 900px) {
+  footer {
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .left {
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
 }
