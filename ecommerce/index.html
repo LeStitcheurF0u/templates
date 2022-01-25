@@ -16,15 +16,15 @@
         <nav>
             <ul>
                 <li class="active"><a href="">Accueil</a></li>
-                <li><a href="">A propos</a></li>
-                <li><a href="">Articles</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="about.html">A propos</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
         <div class="panier">
             <div class="panier-img">
-            <a href=""><img src="media/img/cart.png" alt="Panier"></a>
+            <a href="cart.html"><img src="media/img/cart.png" alt="Panier"></a>
             </div>
             <div class="panier-content">
                 <span>3 articles</span>
@@ -45,6 +45,9 @@
 
 
     <main>
+        <div class="section-title">
+            <h2>Les meilleures ventes</h2>
+        </div>
         <div class="items">
             <div class="item">
                 <div class="item-img">
@@ -54,9 +57,8 @@
                     <span>Nom de l'article</span>
                     <span>20.00 EUR</span>
                     <div class="item-desc-link">
-                        <a href=""><img src="media/img/cart-add.png" alt="Ajouter au panier"></a>
-                        <a href=""><img src="media/img/loupe.png" alt="Voir l'article"></a>
-                    </div>
+                        <a href="addPanier.php"><img src="media/img/cart-add.png" alt="Ajouter au panier"></a>
+                        <a href="viewArticle.php"><img src="media/img/loupe.png" alt="Voir l'article"></a>                    </div>
                 </div>
             </div>
             <div class="item">
@@ -67,9 +69,8 @@
                     <span>Nom de l'article</span>
                     <span>20.00 EUR</span>
                     <div class="item-desc-link">
-                        <a href=""><img src="media/img/cart-add.png" alt="Ajouter au panier"></a>
-                        <a href=""><img src="media/img/loupe.png" alt="Voir l'article"></a>
-                    </div>
+                        <a href="addPanier.php"><img src="media/img/cart-add.png" alt="Ajouter au panier"></a>
+                        <a href="viewArticle.php"><img src="media/img/loupe.png" alt="Voir l'article"></a>                    </div>
                 </div>
             </div>
             <div class="item">
@@ -80,9 +81,8 @@
                     <span>Nom de l'article</span>
                     <span>20.00 EUR</span>
                     <div class="item-desc-link">
-                        <a href=""><img src="media/img/cart-add.png" alt="Ajouter au panier"></a>
-                        <a href=""><img src="media/img/loupe.png" alt="Voir l'article"></a>
-                    </div>
+                        <a href="addPanier.php"><img src="media/img/cart-add.png" alt="Ajouter au panier"></a>
+                        <a href="viewArticle.php"><img src="media/img/loupe.png" alt="Voir l'article"></a>                    </div>
                 </div>
             </div>
             <div class="item">
@@ -93,40 +93,34 @@
                     <span>Nom de l'article</span>
                     <span>20.00 EUR</span>
                     <div class="item-desc-link">
-                        <a href=""><img src="media/img/cart-add.png" alt="Ajouter au panier"></a>
-                        <a href=""><img src="media/img/loupe.png" alt="Voir l'article"></a>
+                        <a href="addPanier.php"><img src="media/img/cart-add.png" alt="Ajouter au panier"></a>
+                        <a href="viewArticle.php"><img src="media/img/loupe.png" alt="Voir l'article"></a>
                     </div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="item-img">
-                    <a href=""><img src="media/img/articles/orange_Kraken.png" alt="Article"></a>
-                </div>
-                <div class="item-desc">
-                    <span>Nom de l'article</span>
-                    <span>20.00 EUR</span>
-                    <div class="item-desc-link">
-                        <a href=""><img src="media/img/cart-add.png" alt="Ajouter au panier"></a>
-                        <a href=""><img src="media/img/loupe.png" alt="Voir l'article"></a>
-                    </div>
-                </div>
-            </div>
-                    
+            </div>                    
         </div>
     </main>
     <footer>
         <div class="left">
             <a href="">Accueil</a>
             <a href="">Articles</a>
-            <a href="">C.G.U</a>
-            <a href="">C.G.V</a>
-            <a href="">Mentions Légales</a>
-            <a href="">SiteMap</a>
-        </div>
+            <a href="">SiteMap</a>   
+        </div>        
+            
+            
         <div class="middle">
             <span>Développé par <a href="https://github.com/LeStitcheurF0u">Alexandre HAREL</a></span>
+            <div class="social">
+                <a href=""><img src="media/img/facebook.png" alt="Facebook"></a>
+                <a href=""><img src="media/img/twitter.png" alt="Twitter"></a>
+                <a href=""><img src="media/img/linkedin.png" alt="Linkedin"></a>
+            </div>
         </div>
-        <div class="right"></div>
+        <div class="right">
+            <a href="cgu.html">C.G.U</a>
+            <a href="cgv.html">C.G.V</a>
+            <a href="mentions.html">Mentions Légales</a>
+        </div>
     </footer>
 
 </body>

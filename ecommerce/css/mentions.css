@@ -1,0 +1,14 @@
+ @import url(style.css);
+
+
+ .mentions {
+     margin-top: 100px;
+     margin-bottom: 100px;
+ }
+
+ .mentions p {
+     margin: 60px;
+     text-align: justify;
+     font-family: 'Roboto';
+     font-size: 1.2em;
+ }

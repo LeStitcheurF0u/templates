@@ -6,7 +6,25 @@ html, body {
   scrollbar-color: #000;
 }
 
+h1 {
+  font-family: 'Roboto';
+  font-size: 3.2em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #fefefe;
+  background: #f66717;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+}
+
 header {
+  position: sticky;
+  top: 0;
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -16,9 +34,9 @@ header {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10.5px);
   -webkit-backdrop-filter: blur(10.5px);
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  z-index: 1;
+  z-index: 3;
 }
 
 header .logo img {
@@ -38,6 +56,8 @@ nav ul li {
   margin: 10px;
 }
 
+
+
 nav ul li a {
   width: 100%;
   height: 100%;
@@ -49,7 +69,11 @@ nav ul li a {
 }
 
 nav ul li.active a {
-  color: aqua;
+  background: #119292;
+  color: #fefefe;
+  padding: 50px;
+  border-radius: 0 0 10px 10px;
+  font-weight: 800;
 }
 
 
@@ -128,6 +152,29 @@ nav ul li.active a {
 /*             Articles            */
 /***********************************/
 
+.section-title{
+  margin-top: 20px;
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+}
+
+h2 {
+  padding: 20px;
+  font-size: 3rem;
+  font-family: 'Roboto';
+  text-align: center;
+  text-transform: uppercase;
+  color: #fefefe;
+  letter-spacing: 5px;
+  background: rgb(17, 146, 146);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border-radius: 0 10px 10px 0;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
 .items {
   width: 100%;
   display: flex;
@@ -140,9 +187,9 @@ nav ul li.active a {
 .item {
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 25px;
+  padding: 70px;
   margin: 25px;
   background: rgba(255, 255, 255, 0.4);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -168,7 +215,7 @@ nav ul li.active a {
 .item-desc {
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -211,14 +258,16 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-footer .left {
+footer .left,
+footer .right{
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-footer .left a {
+footer .left a,
+footer .right a {
     margin: 5px;
     color: #292929;
     font-size: 1.2em;
@@ -228,14 +277,32 @@ footer .left a {
     text-transform: uppercase;
 }
 
-footer .left a:hover {
+footer .left a:hover,
+footer .right a:hover {
     color: #f66717;
+}
+
+footer .middle {
+  padding-top: 15px;
 }
 
 footer .middle span {
   color: #292929;
   font-size: 1.2em;
   font-family: "Roboto";
+}
+
+footer .social {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
 }
 @media screen and (max-width: 900px) {
   footer {
