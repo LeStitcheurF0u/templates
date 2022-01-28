@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="media/img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
     <title>Template E-Commerce</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href=""><img src="media/img/logo.png" alt="Logo ABSUMM"></a>
+            <a href="index.html"><img src="media/img/logo.png" alt="Logo ABSUMM"></a>
         </div>
         <nav>
             <ul>
@@ -21,6 +21,30 @@
                 <li class="active"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+
+        <div class="menu">
+            <div class="toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <script>
+              let menutoggle = document.querySelector(".toggle");
+              let menu = document.querySelector(".menu");
+              menutoggle.onclick = function () {
+                menu.classList.toggle("open");
+                menutoggle.classList.toggle("active");
+              };
+            </script>
+            <div class="contenu-menu">
+              <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="about.html">A propos</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
 
         <div class="panier">
             <div class="panier-img">
@@ -32,11 +56,23 @@
             </div>
         </div>
     </header>
+    <main>
+        <h1>Nous contacter</h1>
+        <form action="" method="post">
+            <input type="text" name="name" id="name" placeholder="Votre nom" required>
+            <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required>
+            <input type="email" name="mail" id="mail" placeholder="Votre mail" required>
+            <input type="text" name="sujet" id="sujet" placeholder="Le sujet de votre contact" required>
+            <textarea name="message" id="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+    
 
     <footer>
         <div class="left">
-            <a href="">Accueil</a>
-            <a href="">Articles</a>
+            <a href="index.html">Accueil</a>
+            <a href="articles.html">Articles</a>
             <a href="">SiteMap</a>   
         </div>        
             

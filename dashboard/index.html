@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Template Dashboard</title>
+</head>
+<body>
+    <!--Sidebar-->
+    <div class="sidebar">
+        <div class="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <script>
+            let menutoggle = document.querySelector(".toggle");
+            let sidebar = document.querySelector(".sidebar");
+            menutoggle.onclick = function () {
+                sidebar.classList.toggle("open");
+                menutoggle.classList.toggle("active");
+            };
+        </script>
+    <div class="lien active">
+        <a href=""><img src="media/img/icons/accueil.png" title="Acceuil" alt="Accueil"></a>
+        <span>Acceuil</span>
+    </div>
+    <div class="lien">
+        <a href=""><img src="media/img/icons/stat.png" title="Statistiques" alt="Statistiques"></a>
+        <span>Statistiques</span>
+    </div>
+    <div class="lien">
+        <a href=""><img src="media/img/icons/stock.png" title="Stocks" alt="Stocks"></a>
+        <span>Stocks</span>
+    </div>
+    <div class="lien">
+        <a href=""><img src="media/img/icons/users.png" title="Clients" alt="Clients"></a>
+        <span>Clients</span>
+    </div>
+    <div class="lien">
+        <a href=""><img src="media/img/icons/factures.png" title="Factures" alt="Factures"></a>
+        <span>Factures</span>
+    </div>
+    <div class="lien">
+        <a href=""><img src="media/img/icons/logout.png" title="Deconnexion" alt="Deconnexion"></a>
+        <span>Deconnexion</span>
+    </div>
+    </div>
+    
+    
+
+</body>
+</html>

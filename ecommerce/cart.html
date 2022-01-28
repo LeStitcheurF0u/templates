@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="logo">
-            <a href=""><img src="media/img/logo.png" alt="Logo ABSUMM"></a>
+            <a href="index.html"><img src="media/img/logo.png" alt="Logo ABSUMM"></a>
         </div>
         <nav>
             <ul>
@@ -21,6 +21,30 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+
+        <div class="menu">
+            <div class="toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <script>
+              let menutoggle = document.querySelector(".toggle");
+              let menu = document.querySelector(".menu");
+              menutoggle.onclick = function () {
+                menu.classList.toggle("open");
+                menutoggle.classList.toggle("active");
+              };
+            </script>
+            <div class="contenu-menu">
+              <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="about.html">A propos</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
 
         <div class="panier">
             <div class="panier-img">
@@ -33,10 +57,12 @@
         </div>
     </header>
 
+    
+
     <footer>
         <div class="left">
-            <a href="">Accueil</a>
-            <a href="">Articles</a>
+            <a href="index.html">Accueil</a>
+            <a href="articles.html">Articles</a>
             <a href="">SiteMap</a>   
         </div>        
             

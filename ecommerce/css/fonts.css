@@ -2,3 +2,13 @@
     font-family: 'Roboto';
     src: url(../media/fonts/roboto/Roboto-Regular.ttf);
 }
+
+@font-face {
+    font-family: 'Marker';
+    src: url(../media/fonts/marker/PermanentMarker-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url(../media/fonts/helvetica/Helvetica.ttf);
+}
